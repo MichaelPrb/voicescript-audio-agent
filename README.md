@@ -35,6 +35,8 @@ This repository contains a robust, scalable audio analysis pipeline designed to 
 2.  Create a `.env` file in the root directory and add your API Key:
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
+```
+
 3.  Execute the main pipeline:
 ```bash
 python main.py
