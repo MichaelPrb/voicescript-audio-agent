@@ -1,0 +1,36 @@
+[
+    {
+        "file_name": "bad_audio.mp3",
+        "duration_seconds": 121.21,
+        "bitrate": 47194,
+        "sample_rate": 16000,
+        "channels": 1,
+        "audio_quality": {
+            "avg_volume_db": -16.6,
+            "clipping_detected": false,
+            "silence_ratio": 0.134
+        },
+        "issues": [
+            "The average volume of -16.6 dB is within the optimal range for speech transcription, providing excellent audibility without introducing excessive noise floor. No gain adjustments or normalization are required.",
+            "No digital clipping was detected, preserving the integrity of the waveform and preventing harmonic distortion. This ensures high-fidelity audio that will maximize transcription accuracy.",
+            "The silence ratio of 13.4% indicates a natural conversational flow with standard pauses and no significant dead air. The audio is ready for transcription without the need for pre-processing or silence truncation."
+        ]
+    },
+    {
+        "file_name": "moonlight-plaza.mp3",
+        "duration_seconds": 854.57,
+        "bitrate": 128004,
+        "sample_rate": 48000,
+        "channels": 1,
+        "audio_quality": {
+            "avg_volume_db": -25.3,
+            "clipping_detected": false,
+            "silence_ratio": 0.012
+        },
+        "issues": [
+            "The average volume of -25.3 dB is significantly low and may impair transcription accuracy. Recommend boosting the gain by approximately 6 to 8 dB to achieve an optimal speech listening level.",
+            "No clipping is detected in the signal, which is excellent for audio fidelity. This provides sufficient headroom to safely increase the volume without introducing digital distortion.",
+            "A silence ratio of 1.2% indicates almost continuous audio throughout the recording. Editors should verify if this is due to constant speech rather than persistent background hum or static that requires noise gating."
+        ]
+    }
+]
